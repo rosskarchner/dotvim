@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/cfpbuser/projects/schism'
+let g:netrw_dirhist_2='/Users/cfpbuser/projects/schism/src'
+let g:netrw_dirhist_3='/Users/cfpbuser/projects/schism/src/schism'
+let g:netrw_dirhist_4='/Users/cfpbuser'
+let g:netrw_dirhist_5='/Users/cfpbuser/projects'
+let g:netrw_dirhist_6='/Users/cfpbuser/projects/schism'
