@@ -24,12 +24,12 @@ set softtabstop=4   " Sets the number of columns for a TAB
 
 set expandtab       " Expand TABs to spaces
 set nowrap
-:set guifont=SourceCodePro-Regular:h14
+set guifont=Source\ Code\ Pro\ 10
 set nrformats=
 
 filetype plugin indent on
 au FileType py set autoindent
 au FileType py set smartindent
 au FileType py set textwidth=79
-nmap <silent> <C-D> :NERDTreeToggle<CR>
 call pathogen#infect()
+nmap <silent> <C-D> :NERDTreeToggle<CR>
