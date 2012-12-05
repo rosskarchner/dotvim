@@ -41,6 +41,7 @@ au FileType py set smartindent
 au FileType py set textwidth=79
 call pathogen#infect()
 nmap <silent> <C-D> :NERDTreeToggle<CR>
+nmap <C-F5> :SyntasticCheck<CR>
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
