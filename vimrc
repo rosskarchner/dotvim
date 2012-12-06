@@ -1,9 +1,9 @@
 
 " disable arrow keys
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+map <up> :bprev<CR>
+map <down> :bnext<CR>
+map <left> :tabprevious<CR>
+map <right> :tabnext<CR>
 imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
