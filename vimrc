@@ -33,6 +33,7 @@ set softtabstop=4   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 set nowrap
 set guifont=Source\ Code\ Pro\ 10
+colorscheme guardian
 set nrformats=
 
 filetype plugin indent on
