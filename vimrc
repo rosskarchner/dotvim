@@ -45,9 +45,3 @@ nmap <C-F5> :SyntasticCheck<CR>
 " Shortcut to rapidly toggle `set list`
 nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
-
-" from Practical Vim "Create Mappings to Quickly Traverse Vim's Lists
-nnoremap <silent> [b :bprevious<CR>
-nnoremap <silent> ]b :bnext    <CR>
-nnoremap <silent> [B :bfirst   <CR>
-nnoremap <silent> ]B :blast    <CR>
