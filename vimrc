@@ -19,6 +19,7 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 set incsearch
 set hlsearch
+set smartcase
 syntax on
 set number
 set tabstop=4       " The width of a TAB is set to 4.
