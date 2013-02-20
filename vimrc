@@ -55,6 +55,9 @@ colorscheme corporation
 
 nmap \l :setlocal number!<CR>
 nmap \o :set paste!<CR>
+nmap \w :set wrap!<CR>
+nmap \t :tabnew<CR>
+
 
 :cnoremap <C-a>  <Home>
 :cnoremap <C-b>  <Left>
