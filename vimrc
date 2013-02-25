@@ -73,3 +73,6 @@ nmap \t :tabnew<CR>
 if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
     set t_Co=256
 endif
+
+"ignore python noise
+:set wildignore=*.pyc,*.pyo
