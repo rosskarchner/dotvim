@@ -32,3 +32,6 @@
 [submodule "bundle/brightscript"]
 	path = bundle/brightscript
 	url = https://github.com/chooh/brightscript.vim.git
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
