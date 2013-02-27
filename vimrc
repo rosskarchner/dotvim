@@ -58,7 +58,7 @@ nmap \o :set paste!<CR>
 nmap \w :set wrap!<CR>
 nmap \t :tabnew<CR>
 
-
+nmap <NL> :wincmd w<CR>
 :cnoremap <C-a>  <Home>
 :cnoremap <C-b>  <Left>
 :cnoremap <C-f>  <Right>
