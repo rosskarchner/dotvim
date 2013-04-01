@@ -50,15 +50,21 @@ set listchars=tab:▸\ ,eol:¬
 set encoding=utf-8
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
-
-colorscheme corporation
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+set t_Co=16
+let g:solarized_termcolors=16
+colorscheme solarized
 
 nmap \l :setlocal number!<CR>
 nmap \o :set paste!<CR>
 nmap \w :set wrap!<CR>
 nmap \t :tabnew<CR>
 
-
+nmap <NL> :wincmd w<CR>
 :cnoremap <C-a>  <Home>
 :cnoremap <C-b>  <Left>
 :cnoremap <C-f>  <Right>
