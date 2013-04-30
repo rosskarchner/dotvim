@@ -1,1 +1,1 @@
-This is my vim congiration. There are many like it, but this one is mine.
+This is my vim configuration. There are many like it, but this one is mine.
