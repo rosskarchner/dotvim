@@ -44,3 +44,6 @@
 [submodule "bundle/markdown"]
 	path = bundle/markdown
 	url = git://github.com/tpope/vim-markdown.git
+[submodule "bundle/vim-flake8"]
+	path = bundle/vim-flake8
+	url = https://github.com/nvie/vim-flake8.git
