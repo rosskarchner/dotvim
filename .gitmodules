@@ -47,3 +47,6 @@
 [submodule "bundle/vim-flake8"]
 	path = bundle/vim-flake8
 	url = https://github.com/nvie/vim-flake8.git
+[submodule "bundle/vst"]
+	path = bundle/vst
+	url = https://github.com/vim-scripts/VST.git
