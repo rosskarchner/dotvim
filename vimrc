@@ -49,20 +49,7 @@ nmap <leader>l :set list!<CR>
 set listchars=tab:▸\ ,eol:¬
 
 set encoding=utf-8
-let g:Powerline_symbols = 'fancy'
-let g:airline_powerline_fonts = 1
-  if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-  endif
 
-  " old vim-powerline symbols
-  let g:airline_left_sep = '⮀'
-  let g:airline_left_alt_sep = '⮁'
-  let g:airline_right_sep = '⮂'
-  let g:airline_right_alt_sep = '⮃'
-  let g:airline_symbols.branch = '⭠'
-  let g:airline_symbols.readonly = '⭤'
-  let g:airline_symbols.linenr = '⭡'
 set laststatus=2
 if has('gui_running')
     set background=light
