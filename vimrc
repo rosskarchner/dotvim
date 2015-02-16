@@ -58,8 +58,8 @@ if has('gui_running')
 else
     set background=dark
 endif
-set t_Co=16
-let g:solarized_termcolors=16
+" set t_Co=16
+" let g:solarized_termcolors=16
 colorscheme solarized
 
 highlight ColorColumn ctermbg=magenta
