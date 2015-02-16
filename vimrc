@@ -31,8 +31,7 @@ set shiftwidth=4    " Indents will have a width of 4
 
 set softtabstop=4   " Sets the number of columns for a TAB
 
-highlight ColorColumn ctermbg=magenta
-call matchadd('ColorColumn', '\%81v', 100)
+
 set expandtab       " Expand TABs to spaces
 set nowrap
 set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
@@ -63,6 +62,8 @@ set t_Co=16
 let g:solarized_termcolors=16
 colorscheme solarized
 
+highlight ColorColumn ctermbg=magenta
+set colorcolumn=81
 nmap \l :setlocal number!<CR>
 nmap \o :set paste!<CR>
 nmap \w :set wrap!<CR>
