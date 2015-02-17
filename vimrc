@@ -19,8 +19,18 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 set incsearch
 set hlsearch
-set smartcase
+set ignorecase smartcase
+
+"============================================================================
+" Make delete key in Normal mode remove the persistently highlighted matches
+" Source: Mastering Vim (Conway)
+"============================================================================
+
+    nmap <silent>  <BS>  :nohlsearch<CR>
+
 syntax on
+set foldmethod=syntax
+
 set number
 set tabstop=4       " The width of a TAB is set to 4.
                     " Still it is a \t. It is just that
@@ -86,3 +96,36 @@ endif
 
 "ignore python noise
 :set wildignore=*.pyc,*.pyo
+
+
+"============================================================================
+" Make :help appear in a full-screen tab, instead of a window
+" Source: Mastering Vim (Conway)
+"============================================================================
+
+    "Only apply to .txt files...
+    augroup HelpInTabs
+        autocmd!
+        autocmd BufEnter  *.txt   call HelpInNewTab()
+    augroup END
+
+    "Only apply to help files...
+    function! HelpInNewTab ()
+        if &buftype == 'help'
+            "Convert the help window to a tab...
+            execute "normal \<C-W>T"
+        endif
+    endfunction
+    
+"============================================================================
+" Set up persistent undo (with all undo files in one directory)
+" Source: Mastering Vim (Conway)
+"============================================================================
+
+    if has('persistent_undo')
+        set undofile
+    endif
+
+    set undodir=$HOME/.VIM_UNDO_FILES
+
+    set undolevels=5000
