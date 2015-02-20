@@ -71,7 +71,7 @@ endif
 
 colorscheme solarized
 
-highlight ColorColumn ctermbg=magenta
+highlight ColorColumn ctermbg=magenta ctermfg=black
 set colorcolumn=81
 nmap \l :setlocal number!<CR>
 nmap \o :set paste!<CR>
