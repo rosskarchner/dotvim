@@ -1,4 +1,3 @@
-
 " disable arrow keys
 map <up> :bprev<CR>
 map <down> :bnext<CR>
@@ -9,12 +8,12 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
+nnoremap <C-Up>     :tabnew<CR>
 " enable the mouse
 set mouse=a
 
 " expand %% to current files directory
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
-
 
 
 set incsearch
@@ -26,10 +25,9 @@ set ignorecase smartcase
 " Source: Mastering Vim (Conway)
 "============================================================================
 
-    nmap <silent>  <BS>  :nohlsearch<CR>
+nmap <silent>  <BS>  :nohlsearch<CR>
 
 syntax on
-set foldmethod=syntax
 
 set number
 set tabstop=4       " The width of a TAB is set to 4.
@@ -44,7 +42,7 @@ set softtabstop=4   " Sets the number of columns for a TAB
 
 set expandtab       " Expand TABs to spaces
 set nowrap
-set guifont=Source\ Code\ Pro\ for\ Powerline\ 10
+set guifont=Source\ Code\ Pro\ for\ Powerline:h14
 set nrformats=
 
 filetype plugin indent on
